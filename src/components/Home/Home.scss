@@ -1,0 +1,121 @@
+$bg: rgb(0, 0, 0);
+
+.banner{
+    height: 1000px;
+    background-color: $bg;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+     
+    &::after{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: $bg;
+       
+    }
+
+}
+
+
+h1{
+    color: white;
+    font-size: 4rem;
+    width: 50%;
+    z-index: 10;
+    margin-left: 3%;
+}
+h3{
+    color: rgb(136, 136, 136);
+    margin-bottom: 2.5rem;
+    font-weight: 500;
+    margin-left: 3%;
+}
+
+p{
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    word-spacing: 2px;
+    margin-left: 3%;
+    margin-bottom: 10px;
+}
+
+button{
+    padding: 0.8rem;
+    width: 140px;
+    outline: none;
+    border-radius: 8px;
+    margin-left: 3%;
+    background-color: rgba(202, 7, 7, 0.945);
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+   
+
+    >div{
+        display: flex;
+
+      
+        
+    }
+}
+
+.row{
+    padding: 1rem;
+    background-color: $bg;
+    
+    >h2 {
+        font-weight: 500;
+        margin: 0.5rem;
+        color: white;
+    }
+   
+    >div {
+        display: flex;
+       overflow-x: auto;
+          
+    }
+
+}
+
+.card{
+    width: 200px;
+    margin: 0.5rem;
+    cursor: pointer;
+    
+    transition: transform 0.5s;
+    &:hover {
+        transform: translateY(-5px) scale(1.05);
+    }
+}
+
+.genreBox{
+    overflow-x: auto;
+    display: flex;
+    height: 100px;
+    background-color: black;
+
+    >a {
+        color: black;
+        background-color: white;
+        padding: 1rem;
+        margin: 1rem;
+        font-weight: 600;
+        border-radius: 5px;
+        text-align: center;
+        min-width: 8rem;
+       
+
+        &:hover {
+            background-color: rgb(189, 189, 189);
+        }
+
+
+    }
+}
